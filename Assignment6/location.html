@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script lang="javascript">
+            function fun(){
+                //href property of Locartion used to specify the complete URL
+                location.href = "status.html";
+               // location.href.replace="mainclose.html"
+                protocol = location.protocol;
+                domain= location.host;
+                document.write("Used protocol is: "+protocol+"<br>");
+                document.write(domain);
+            }
+        </script>
+    </head>
+    <body>
+        <h3>Location Demo</h3>
+        <input type="button" value="change" onclick="fun()">
+    </body>
+</html>

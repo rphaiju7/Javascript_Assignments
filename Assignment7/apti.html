@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Question</title>
+    <script lang="javascript">
+      function checkAns(){
+      if(document.getElementById("rbb").checked){
+        alert("Correct answer! "+document.getElementById("rbb").value)
+      }
+      else
+      {
+        alert("Wrong answer! Try again..");
+      }}
+    </script>
+    <body bgcolor="red">
+        <form name="form1">
+
+          <h3 style="color: aquamarine;">Answer the following question: </h3>
+            <h4 style="color: yellow;">What is your home address?</h4>
+            <input type="radio" name="rb1" id="rb" value="Bhaktapur"> Bhaktapur
+            <input type="radio" name="rb1" id="rbb" value="Kathmandu"> Kathmandu
+            <input type="radio" name="rb1" id="rbbb" value="Kavre"> Kavre
+            <input type="radio" name="rb1" id="rbbbb" value="Lalitpur"> Lalitpur
+                <br>
+            <input type="submit" name="" id="s" onclick="checkAns();">
+
+
+        </form>
+    </body>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+    <script lang="javascript">
+        //only three elements in the form, to access that we can use elements array
+        function funDisp(){
+            alert("Textbook val is "+document.forms[0].elements[0].value);
+            alert("Textbook val is "+document.forms[0].elements[1].value);
+            alert("Textbook val is "+document.forms[0].elements[2].value);
+
+        }
+    </script>
+    <form name="frm1">
+        <input type="text" name="txt1" value="Imcs"><br>
+        <input type="radio" name="rad1" value="1" unchecked>ok <br>
+        <input type="button" name="but1" value="Submit" onclick="funDisp();">
+    </form>
+</html>

@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script>
+        //Comments: functions does not have any arguments, but arguments array will store the arguments
+        function dispStr() {
+            for (let i = 0; i < arguments.length; i++) {
+                document.write(arguments[i] + " ");
+            }
+        }
+        //calling function with three arguments
+        dispStr("lone","1two","1three");
+        document.write("<br>");
+        //calling function with five arguments
+        dispStr("2one","2two","2three","2four","2five");
+    </script>
+</head>
+
+</html>

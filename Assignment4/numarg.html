@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Return average of arguments</title>
+            <Script>
+                function average(){
+                    var sum=0;
+                    var avg ;
+                    for (let i = 0; i < arguments.length; i++) {
+                        sum+=arguments[i];
+                    }
+                    document.write("<h2>The average is: ")
+                    avg = sum/arguments.length;
+                    return avg;
+                }
+            </Script>
+    </head>
+    <body>
+        <script>
+            document.write(average(3,4,5,7,9,8));
+            document.write(average(3,8))
+        </script>
+    </body>
+</html>

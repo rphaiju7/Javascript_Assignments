@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Validation</title>
+    <script lang="javascript">
+
+        function isEmpty(){
+            let getEmpno = (document.getElementById('empno').value);
+
+            if(getEmpno.length==0){
+                return 0;
+            }
+            else{
+                return 1;
+            }
+        }
+        function checkSpace(){
+            let getEmpno = (document.getElementById('empno').value);
+
+      document.write(getEmpno);
+  }
+    </script>
+</head>
+<body>
+    <form name ="f1">
+       <h3 style="border: wheat; text-align: center; color: darkcyan;"
+       >Employee Number <input type="textbox" name="tb1" id="empno" value=""></h3>
+       <h3 style="border: wheat; text-align: center; color: darkcyan;"
+       >Click here  to submit form: <input type="submit" name="sss" id="s" onclick="document.write(isEmpty())") >
+    </form>
+</body>
+</html>

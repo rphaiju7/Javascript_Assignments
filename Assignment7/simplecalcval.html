@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Page to add numbers</title>
+        <script lang="javascript">
+
+            function addNum(){
+                firstNum = parseInt(document.getElementById("f").value);
+                secondNum = parseInt(document.getElementById("s").value);
+               document.getElementById("r").value=(firstNum+secondNum);
+            }
+            function subNum(){
+                firstNum = parseInt(document.getElementById("f").value);
+                secondNum = parseInt(document.getElementById("s").value);
+               document.getElementById("r").value=(firstNum-secondNum);
+            }
+            function mulNum(){
+                firstNum = parseInt(document.getElementById("f").value);
+                secondNum = parseInt(document.getElementById("s").value);
+               document.getElementById("r").value=(firstNum*secondNum);
+            }
+            function divNum(){
+                firstNum = parseInt(document.getElementById("f").value);
+                secondNum = parseInt(document.getElementById("s").value);
+               document.getElementById("r").value=(firstNum/secondNum);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formq">
+            Num1<input type="text" name="fNum" id="f"><br>Num2
+            <input type="text" name="sNum"  id="s"><br>Result
+            <input name="Result" id="r"><br>
+            <input type="button" name="Add" value="Add" onclick="addNum();">
+            <input type="button" name="Add" value="Subtract" onclick="subNum();">
+            <input type="button" name="Add" value="Multiply" onclick="mulNum();">
+            <input type="button" name="Add" value="Divide" onclick="divNum();">
+            </form>
+    </body>
+</html>

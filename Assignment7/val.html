@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infy Bank</title>
+    <script lang="javascript">
+        var name;
+        var dob;
+        var mail;
+        function dispInputData() {
+            naame = document.getElementById('name').value;
+            dob = document.getElementById('dob').value;
+            mail = document.getElementById('eMail').value;
+            if (naame.length!=0 && dob.length!=0 && mail.length !=0) {
+                alert("Customer Name is: " + name);
+                alert("Customer date of birth is: " + dob);
+                alert("Customer email is: " + mail);
+            }
+            else
+            alert("You are required to fill all the fields: ");
+
+
+        }
+    </script>
+</head>
+
+<body bgcolor="rgb(151, 110, 7">
+    <h1 style="color: rgb(151, 110, 7); text-align: center;">INFY BANK</h1>
+    <h2 style="color: rgb(151, 110, 7); text-align: center;">Customer Registration Form</h1>
+
+        <form name="f1" style="border: antiquewhite;">
+            <h3 style="text-align: center;">Customer Name(*) <input type="text" name="cName" id="name" required
+                    maxlength="20" minlength="3"></h3><br>
+            <h3 style="text-align: center;">Date of Birth(*) <input type="date" name="birthDate" id="dob" required
+                    maxlength="20"></h3> <br>
+            <h3 style="text-align: center;"> Email(*) <input type="email" name="email" id="eMail" required
+                    maxlength="20"></h3>\ <br>
+            <h3 style="text-align: center; color: red;">(*)Mandatory <input type="submit" onclick="dispInputData();">
+            </h3>
+            </h4> <br>
+
+        </form>
+</body>
+
+</html>

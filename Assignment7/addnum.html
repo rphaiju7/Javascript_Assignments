@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Page to add numbers</title>
+        <script lang="javascript">
+            function addNum(){
+                firstNum = parseInt(document.getElementById("f").value);
+                swcondNum = parseInt(document.getElementById("s").value);
+               // document.write(document.form.Result.value);
+               document.getElementById("r").value=(firstNum+swcondNum);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formq">
+            Num1<input type="text" name="fNum" id="f"><br>Num2
+            <input type="text" name="sNum"  id="s"><br>Result
+            <output name="Result" id="r"><br>
+            <input type="button" name="Add" value="Add" onclick="addNum();">
+            </form>
+    </body>
+</html>

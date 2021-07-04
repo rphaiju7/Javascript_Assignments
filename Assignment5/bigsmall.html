@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Occurence of @</title>
+    <script lang="javascript">
+        arr = new Array(1, 2, 55, 66, 33, 22, 1);
+        document.write("Printing large and small number: <br>");
+        for (var i = arr.length - 1; i >= 0; i--) {
+            document.write(arr[i] + " ");
+        }
+        document.write("<br>")
+        small = arr[0];
+        large=arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (small > arr[i]) {
+                small = arr[i];
+            }
+            else if(large<arr[i]){
+                large=arr[i];
+            }
+
+        }
+        document.write("Small Value in array: "+small);
+        document.write("<br>Large Value in array: "+large)
+
+
+    </script>
+</head>
+
+</html>
